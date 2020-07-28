@@ -9,7 +9,6 @@ device1 = {
 }
 netconnect = ConnectHandler(**device1)
 print(netconnect.find_prompt())
-output = netconnect.send_command("sh version")
+output = netconnect.send_command("sh ip arp")
 print(output)
-target = open(session.txt, 'w')
-target.write(output)
+
